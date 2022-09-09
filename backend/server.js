@@ -4,13 +4,12 @@ const User = require('./models/schema')
 const express = require('express')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-var cookieParser = require('cookie-parser')
+
 
 
 
 const app = express()
 
-app.use(cookieParser());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}).then(console.log("conected"))
