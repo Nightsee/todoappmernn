@@ -1,0 +1,461 @@
+:root{
+    --height--var : fit-content;
+    --primary : #BBDED6;
+    --secondary: #FAE3D9;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nd {
+    display: none;
+}
+.d{ 
+    display: block;
+    
+}
+.hide{
+    display: none;
+}
+a{
+    text-decoration: none;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+label, input {
+    display: block;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.navbar {
+    padding: 0 10px;
+    padding-bottom: 4px;
+    height: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar h3 a{
+    font-size: larger;
+    color: black;
+}
+.navbar a {
+    color: black;
+    font-weight: 500;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navcontainer {
+    width: 100%;
+    background-color: var(--primary);
+    height: 50px;
+}
+
+/* home page main section */
+
+.main {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: calc(100vh - 50px);
+}
+.Hook {
+    grid-column: 1/4;
+    position: relative;
+    top : 250px;
+    left: 50px;
+    height: fit-content;
+}
+.Hook h1{
+    font-size: 35px;
+}
+.Hook p{
+    font-style: italic;
+    margin-left: 5px;
+}
+.img{
+    grid-column: 4/7;
+}
+img{
+    width: 600px;
+}
+.signup{
+   position: relative;
+   top: 20px;
+   left: 5px;
+   padding: 8px 10px;
+   border-radius: 10px;
+   background-color: #61C0BF ;
+   color: rgb(255, 255, 255);
+}
+.signup:hover{
+    
+    background-color: #74e7e5;
+    color: rgb(74, 74, 74);
+}
+
+
+/* authentification (login/register) page */
+
+
+.loginform{
+    background-color: var(--secondary);
+    position: relative;
+    top: 160px;
+    margin: 0 auto;
+    width: 350px;
+    padding: 20px 20px 40px 20px;
+    border-radius: 15px;
+}
+.loginform h2{
+    margin-bottom: 30px;
+}
+hr{
+    display: none;
+    width: 300px;
+    margin: 10px 0;
+    color: black;
+    margin-bottom: 0;
+}
+.loginform label {
+    font-size: larger;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.loginform input {
+    padding: 7px 13px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 93%;
+    border: none;
+    font-size: 19px;
+}
+.loginform input:focus{
+    outline: none;
+}
+.loginform button{
+   padding: 8px 10px;
+   border: none;
+   border-radius: 10px;
+   background-color: #61C0BF ;
+   font-size: 19px;
+   font-weight: 400;
+   color: rgb(255, 255, 255);
+   margin-bottom: 10px;
+}
+.loginform button:hover {
+    cursor: pointer;
+    background-color: #74e7e5;
+    color: rgb(74, 74, 74);
+}
+.loginform p{
+    font-size: small;
+    margin: 5px 0 0 3px;
+}
+
+.regform{
+    background-color: var(--secondary);
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 350px;
+    padding: 20px 20px 40px 20px;
+    border-radius: 15px;
+}
+.regform h2{
+    margin-bottom: 30px;
+}
+
+.regform label {
+    font-size: larger;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.regform input {
+    padding: 7px 13px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 93%;
+    border: none;
+    font-size: 19px;
+}
+.regform input:focus{
+    outline: none;
+}
+.regform button{
+   padding: 8px 10px;
+   border: none;
+   border-radius: 10px;
+   background-color: #61C0BF ;
+   font-size: 19px;
+   font-weight: 400;
+   color: rgb(255, 255, 255);
+   margin-bottom: 10px;
+}
+.regform button:hover {
+    cursor: pointer;
+    background-color: #74e7e5;
+    color: rgb(74, 74, 74);
+}
+.regform p{
+    font-size: small;
+    margin: 5px 0 0 3px;
+}
+
+/* Api page */
+
+.navbar2 {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.navbar2 h3 a{
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+.navbar2 button {
+    padding: 8px 10px;
+   border: 2px solid;
+   border-color: white;
+   border-radius: 10px;
+   background-color: #61c0be00 ;
+   font-size: 20px;
+   font-weight: 400;
+   color: rgb(255, 255, 255);
+   position: relative;
+   left: 41%;
+}
+.navbar2 button:hover {
+    padding: 8px 10px;
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #61c0be ;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 41%;
+    transition-duration: 300ms;
+}
+.menu{
+    margin: 0 auto;
+    margin-right: 120px;
+    min-height: calc(100vh - 50px);
+    max-height: var(--height--var);
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.tasks{
+    grid-column: 1/4;
+    max-height: var(--height--var);
+}
+.taskform {
+    position: sticky;
+    top: 10px;
+    margin-top: 10px;
+    grid-column: 4/6;
+    background-color: var(--secondary);
+    width: 90%;
+    height: 340px;
+    padding: 20px 20px 30px 20px;
+    border-radius: 25px;
+}
+.taskform h3{
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.taskform label {
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.taskform input{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 93%;
+    border: none;
+    font-size: 19px;
+}
+.taskform textarea{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 93%;
+    border: none;
+    font-size: 19px;
+    height: 80px;
+}
+.taskform button{
+    padding: 8px 10px;
+   border: none;
+   border-radius: 10px;
+   background-color:#61C0BF ;
+   font-size: 19px;
+   font-weight: 400;
+   color: rgb(255, 255, 255);
+   margin-bottom: 10px;
+}
+.taskform button:hover {
+    cursor: pointer;
+    background-color: #74e7e5;
+    color: rgb(74, 74, 74);
+}
+.tasks{
+    padding: 10px 10px;
+}
+.taskcard {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--secondary);
+    border-radius: 23px;
+    padding: 12px 15px 9px 15px;
+    width: 400px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.taskcard:hover{
+    cursor: pointer;
+}
+.taskcard .data{
+    grid-column: 1/3;
+    padding-left: 10px;
+}
+.taskcard h4{
+    margin-top: 10px;
+    font-size: larger;
+    
+}
+.taskcard p{
+    
+    font-size: 15px;
+}
+.taskcard p span {
+    font-weight: bold;
+}
+
+.taskcard input{
+    margin-left: auto;
+    margin-right: 30px;
+    display: block;
+    width: 20px;
+}
+.taskdetailed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #bbded6d2;
+    width: 100%;
+    height: 100%;
+}
+.taskdetailed::-webkit-scrollbar{
+    display: none;
+}
+/* taskcrad popup */
+.taskdetails{
+    --heightvar : fit-content;
+    background-color: var(--secondary);
+    border-radius: 24px;
+    width: 500px;
+    height: var(--heightvar);
+    position: absolute;
+    left: calc(50% - 267px);
+    top: 23%;
+    padding: 25px 17px;
+   
+}
+#close {
+    position: relative;
+    left: 95%;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: bolder;
+}
+#close:hover {
+    cursor: pointer;
+}
+
+.taskdetails h3 {
+    font-size: 29px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.taskdetails #description {
+    font-size: 17px;
+    margin-bottom: 19px;
+    font-weight: 500;
+}
+.taskdetails #priority {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+.taskdetails button{
+    
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.taskdetails #edit{
+    margin-left: 360px;
+    background-color: rgb(101, 183, 255);
+}
+.taskdetails #save {
+    margin-left: 350px;
+    background-color: rgb(101, 183, 255);
+}
+.taskdetails #Close{
+    margin-left: 10px;
+    background-color: rgb(255, 136, 104);
+}
+.taskdetails #cancel{
+    margin-left: 10px;
+    background-color: rgb(255, 136, 104);
+}
+.taskdetails h3{
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.taskdetails label {
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.taskdetails input{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 93%;
+    border: none;
+    font-size: 19px;
+}
+.taskdetails textarea{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 93%;
+    border: none;
+    font-size: 19px;
+    height: 80px;
+}
